@@ -1,0 +1,46 @@
+@import '../../../settings/colors.scss';
+
+.search {
+  width: 250px;
+  margin-left: px;
+  display: flex;
+  margin-left: 25px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: none;
+  border-right: none;
+  padding: 5px;
+  height: 60px;
+  font-size: 16px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: $fifth-color;
+  background-color: transparent;
+  &::placeholder {
+    color: $fifth-color;
+  }
+}
+
+.searchTerm:focus {
+  color: $fifth-color;
+}
+
+.searchButton {
+  width: 40px;
+  height: 60px;
+  border: none;
+  background: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .search {
+    width: 100%;
+  }
+}
