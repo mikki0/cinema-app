@@ -32,15 +32,22 @@ main {
 
 .movie {
   width: 10.5%;
-  margin: 10px 20px;
+  margin: 10px 20px 40px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
   animation: appear 0.5s ease;
+  transition: 0.3s;
+  background-color: $fourth-color;
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    opacity: 1.1;
+  }
+  &:hover .overlay {
+    opacity: 0.5;
   }
 }
 
@@ -48,16 +55,15 @@ main {
   display: none;
 }
 
-.rating {
-  position: relative;
-  top: 3%;
-  left: 50%;
-  width: 35px;
-  transform: translateX(-50%);
-  font-size: 18px;
-  background-color: green;
-  color: $fifth-color;
-  text-align: center;
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 250px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $second-color;
 }
 
 .movieImage {

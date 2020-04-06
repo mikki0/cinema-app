@@ -9,6 +9,7 @@ const Main = (props) => (
     {props.searchedMovie.map((item) => (
       <section className={styles.movie}>
         <img className={styles.movieImage} alt="Poster" src={item.Poster} />
+        <div className={styles.overlay}></div>
         <h4 className={styles.movieTitle}>{item.Title}</h4>
         <p className={styles.year}>{item.Year}</p>
       </section>
