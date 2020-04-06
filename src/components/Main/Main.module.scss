@@ -13,6 +13,9 @@
 
 main {
   width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 .title {
@@ -20,6 +23,7 @@ main {
   display: block;
   padding: 25px;
   font-size: 32px;
+  width: 100%;
 }
 
 .movie {
@@ -32,6 +36,9 @@ main {
   justify-content: flex-start;
   align-items: left;
   animation: appear 0.5s ease;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .displayNone {
@@ -45,9 +52,8 @@ main {
   width: 35px;
   transform: translateX(-50%);
   font-size: 18px;
-  background-color: $first-color;
+  background-color: green;
   color: $fifth-color;
-  border-radius: 100%;
   text-align: center;
 }
 
