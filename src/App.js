@@ -17,13 +17,11 @@ class App extends React.Component {
     const searchText = event.target[0].value;
     fetch('http://www.omdbapi.com/?apikey=6f576247&t=' + searchText)
       .then((response) => response.json())
-      .then(function (response) {
-        return JSON.stringify(response);
-      })
       .then((response) => {
+        console.log(this);
         this.setState({ searchedMovie: response });
       });
-    console.log(this.state);
+    console.log(this);
     event.target.reset();
   };
 
