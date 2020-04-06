@@ -15,6 +15,7 @@ class App extends React.Component {
   searchMovies = (event) => {
     event.preventDefault();
     const searchText = event.target[0].value;
+    this.setState({ searchedMovie: [] });
     fetch('http://www.omdbapi.com/?apikey=6f576247&t=' + searchText)
       .then((response) => response.json())
       .then((response) => {
