@@ -1,0 +1,12 @@
+@import '../../settings/colors.scss';
+
+main {
+  width: calc(100% - 300px);
+}
+
+.title {
+  color: $fifth-color;
+  display: block;
+  padding: 25px;
+  font-size: 32px;
+}

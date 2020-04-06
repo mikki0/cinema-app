@@ -5,13 +5,13 @@ header {
   display: flex;
   color: $fifth-color;
   display: flex;
-  height: 70px;
+  height: 60px;
   align-items: center;
 }
 
 .logo {
   background-color: $second-color;
-  width: 400px;
+  width: 300px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -29,21 +29,6 @@ header {
     cursor: pointer;
   }
 }
-.list {
-  margin-left: auto;
-  width: 150px;
-  margin-right: 108px;
-  ul {
-    list-style-type: none;
-    justify-content: space-between;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    li {
-      display: block;
-    }
-  }
-}
 
 @media (max-width: 800px) {
   header {
@@ -51,5 +36,8 @@ header {
   }
   .logo {
     width: 100%;
+  }
+  .list {
+    margin: 0 auto;
   }
 }
