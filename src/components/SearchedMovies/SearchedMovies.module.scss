@@ -14,24 +14,40 @@
 main {
   width: calc(100% - 300px);
   display: flex;
+  position: absolute;
+  left: 300px;
+  background-color: $third-color;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
 }
 
-.title {
-  color: $fifth-color;
-  display: block;
-  padding: 10px;
-  font-size: 32px;
+.title_wrap {
   width: 100%;
-  span {
+  display: flex;
+  justify-content: flex-start;
+  .title {
+    color: $fifth-color;
+    padding: 10px;
+    font-size: 32px;
+    span {
+      color: $first-color;
+    }
+  }
+  i {
+    font-size: 64px;
+    transition: 0.2s;
+    align-self: center;
     color: $first-color;
+    &:hover {
+      color: $fifth-color;
+      cursor: pointer;
+    }
   }
 }
 
 .movie {
-  width: 10.5%;
+  width: 200px;
   margin: 10px 20px 40px;
   position: relative;
   display: flex;
@@ -44,10 +60,9 @@ main {
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
-    opacity: 1.1;
   }
   &:hover .overlay {
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }
 

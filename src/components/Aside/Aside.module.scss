@@ -10,11 +10,28 @@
     margin: 30px 0;
     padding: 0;
     li {
-      padding: 10px 0 10px 50px;
+      height: 50px;
       transition: 0.2s;
+      margin: 10px 0;
+      color: $fifth-color;
+      text-decoration: none;
       &:hover {
         background-color: $third-color;
         cursor: pointer;
+      }
+      a {
+        display: block;
+        padding-left: 20px;
+        line-height: 50px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      a.active {
+        background-color: $third-color;
+        color: $first-color;
       }
     }
   }
@@ -22,6 +39,5 @@
 
 .active {
   background-color: $third-color;
-  cursor: pointer;
   color: $second-color;
 }
