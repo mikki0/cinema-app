@@ -41,3 +41,9 @@
   background-color: $third-color;
   color: $second-color;
 }
+
+@media (max-width: 800px) {
+  .section {
+    display: none;
+  }
+}
